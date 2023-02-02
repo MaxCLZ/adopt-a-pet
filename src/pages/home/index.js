@@ -8,7 +8,6 @@ const HomePage = () => {
   const [data, setData] = useState(null);
 
   const { type } = useParams();
-  console.log(type);
   useEffect(() => {
     async function getPetsData() {
       const petsData = await getPets(type);
